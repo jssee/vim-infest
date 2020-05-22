@@ -54,9 +54,9 @@ endfunction
 
 command! -nargs=0 -bang InfestRaid call s:InfestRaid(<q-bang>)
 
-nnoremap <silent> <Plug>(infest_statement) :call s:InfestStatement()<CR>
-nnoremap <silent> <Plug>(infest_cword) :call s:InfestCword()<CR>
-nnoremap <silent> <Plug>(infest_prompt) :call s:InfestPrompt()<CR>
+nnoremap <silent> <Plug>(infest_statement) :<C-U>call <SID>InfestStatement()<CR>
+nnoremap <silent> <Plug>(infest_cword) :<C-U>call  <SID>InfestCword()<CR>
+nnoremap <silent> <Plug>(infest_prompt) :<C-U>call  <SID>InfestPrompt()<CR>
 
 " Usage
 " nmap <key> <Plug>(infest_statement)
