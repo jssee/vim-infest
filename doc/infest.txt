@@ -1,0 +1,41 @@
+*infest.txt*	A plugin for debugging code lickity-split
+
+
+                  VIM-INFEST DOCUMENTATION by Jesse Hoyos
+
+
+Help on using vim-infest                                                *infest* *vim-infest*
+
+    1. Introduction ............................... |infest-intro|
+    2. Installation ............................... |infest-installation|
+    4. Usage ...................................... |infest-usage|
+
+==============================================================================
+ 1. INTRODUCTION                                                     *infest-intro*
+
+vim-infest is a simple set of functions that allow you to debug your code
+
+==============================================================================
+ 2. INSTALLATION                                              *infest-installation*
+
+you can install the plugin using whatever package/plugin manager you want, here
+is an example using minpac
+
+call minpac#add('jssee/vim-infest')
+
+or you can just copy infest.vim file and place it in your plugin directory.
+
+This plugin is really specifically made with javascript coding in mind so optionally,
+you can take a more _involved_ approach and choose to only load the plugin for
+javascript and its different variants:
+
+call minpac#add('jssee/vim-infest', {'type': 'opt'})
+augroup infest_file
+  autocmd!
+  autocmd FileType *.js,*.ts,*.jsx,*.tsx packadd vim-infest
+augroup END
+
+==============================================================================
+ 3. USAGE                                                           *infest-usage*
+
+[WIP] see repo (https://github.com/jssee/vim-infest/blob/master/README.md) readme for details

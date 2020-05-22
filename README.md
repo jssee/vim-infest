@@ -3,7 +3,7 @@ vim-infest is a simple set of functions that allow you to debug your code
 [lickity-split](https://www.merriam-webster.com/dictionary/lickety-split).
 
 ## Installation
-you can install the colorscheme using whatever package/plugin manager you want, here
+you can install the plugin using whatever package/plugin manager you want, here
 is an example using [minpac](https://github.com/k-takata/minpac):
 ```vim
 call minpac#add('jssee/vim-infest')
